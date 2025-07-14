@@ -1,25 +1,90 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erik Henrique Calixto dos Santos</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Página Personalizável</title>
+    <style>
+        :root {
+            /* Cores principais */
+            --bg-body: #484d50;
+            --bg-container: #000000;
+            --text-color: white;
+            --link-bg: #0073e6;
+            --link-hover-bg: #005bb5;
+
+            /* Fonte */
+            --font-family: Arial, sans-serif;
+
+            /* Espaçamentos */
+            --container-max-width: 800px;
+            --container-padding: 20px;
+            --container-margin-top: 50px;
+            --link-padding: 10px 20px;
+            --link-margin: 10px;
+
+            /* Bordas */
+            --border-radius-container: 10px;
+            --border-radius-link: 5px;
+
+            /* Sombra */
+            --box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+
+            /* Alinhamento */
+            --text-align: center;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--bg-body);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: var(--container-max-width);
+            margin: var(--container-margin-top) auto;
+            padding: var(--container-padding);
+            background: var(--bg-container);
+            border-radius: var(--border-radius-container);
+            box-shadow: var(--box-shadow);
+            text-align: var(--text-align);
+        }
+
+        .links a {
+            margin: var(--link-margin);
+            display: inline-block;
+            text-decoration: none;
+            color: var(--text-color);
+            background: var(--link-bg);
+            padding: var(--link-padding);
+            border-radius: var(--border-radius-link);
+            transition: background 0.3s;
+        }
+
+        .links a:hover {
+            background: var(--link-hover-bg);
+        }
+
+        .sobre {
+            text-align: var(--text-align);
+            margin-top: 30px;
+            color: var(--text-color);
+        }
+    </style>
 </head>
 <body>
+
     <div class="container">
-        <h1>ERIK HENRIQUE CALIXTO DOS SANTOS</h1>
-        <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
-        <p>Buscando oportunidades em tecnologia | Suporte técnico | Desenvolvimento web</p>
+        <h1>Bem-vindo à Página Personalizável</h1>
+        <p class="sobre">Esta é uma área de introdução sobre você ou seu projeto.</p>
+
         <div class="links">
-            <a href="https://www.linkedin.com/in/eriksantos" target="_blank">LinkedIn</a>
-            <a href="https://github.com/eriksantos" target="_blank">GitHub</a>
-            <a href="Curriculo_Erik_Tecnologia.docx" download>Baixar Currículo</a>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
         </div>
-        <section class="sobre">
-            <h2>SOBRE MIN</h2>
-            <p>Sou um profissional proativo, organizado e em constante aprendizado. Tenho experiência com suporte técnico, manutenção de computadores e projetos pessoais como criação de loja virtual e administração de site de vendas.</p>
-        </section>
     </div>
+
 </body>
 </html>
